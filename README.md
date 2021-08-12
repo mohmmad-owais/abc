@@ -1,4 +1,4 @@
 # aws_VirtualLolly
 
 Deploy using Amplify s3Bucket
-Use EventBridge Lambda Function
+#Use EventBridge Lambda Function
