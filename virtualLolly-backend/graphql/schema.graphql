@@ -1,0 +1,26 @@
+type Query {
+  getAllLollies: [Lolly]!
+  getLollyByPath(lollyPath: String!): Lolly
+}
+type Lolly {
+  recipientName: String!
+  sendersName: String!
+  message: String!
+  flavorTop: String!
+  flavorMid: String!
+  flavorBot: String!
+  lollyPath: String!
+}
+
+input createLollyInput {
+  recipientName: String!
+  sendersName: String!
+  message: String!
+  flavorTop: String!
+  flavorMid: String!
+  flavorBot: String!
+  lollyPath: String!
+}
+type Mutation {
+  createLolly(lolly: createLollyInput!): Lolly
+}
